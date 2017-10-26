@@ -43,3 +43,24 @@ def max(numbers):
 			current_max = n
 
 	return current_max
+
+def average_score(numbers):
+	average = sum(numbers) / float(len(numbers))
+	return average
+
+def drop_lowest_two(numbers):
+	lowest = numbers[0]
+	for n in numbers:
+		if n < lowest:
+			lowest = n
+
+	numbers.remove(lowest)
+
+	new_lowest = numbers[0]
+	for n in numbers:
+		if n < new_lowest:
+			new_lowest = n
+
+	numbers.remove(new_lowest)
+
+	return numbers

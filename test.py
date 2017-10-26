@@ -16,3 +16,5 @@ numbers = [1, 3, 4, 2, 4]
 
 print sum(numbers)
 print max(numbers)
+print average_score(numbers)
+print drop_lowest_two(numbers)
